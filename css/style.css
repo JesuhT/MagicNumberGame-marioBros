@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    top: 0;
+    left: 0;
+    font-family: 'Quicksand','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(41, 47, 59, 0.726);
+    background-size: contain;
+    
+}
+.main{
+    /* background-image: url('../assets/img/background.png');  */
+    background-color: rgb(0, 0, 0);
+
+    color: white;
+    /* text-shadow: 1px  0px 0px white,
+               0px  1px 0px white,
+              -1px  0px 0px white,
+               0px -1px 0px white; */
+    border-radius: 7px;
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.top {
+    padding: 20px;
+}
+#guess {
+    padding: 8px 12px;
+    border-radius: 7px;
+    border: none;
+}
+#container {
+    min-width: 500px;
+    width: 100vh;
+    display: flex;
+    grid-column: 1fr 1fr;
+    align-items: center;
+    padding: 1rem 1rem 0px 1rem;
+
+}
+#bowser-peach{
+    display: flex;
+    gap: 0px;
+    
+}
+#bowser {
+    height: 7rem;    
+}
+
+.peach-cut {
+    width: 5rem;
+	height: 6rem;
+    object-fit: none;
+
+}
+#peach {
+    height: 6rem;
+    transition: transform 0.5s ease;
+}
+
+#mario {
+    position: relative;
+    padding-left: 400px;
+    width: 2.5rem;
+    height: 5.5rem;
+    transition: transform 0.5s ease;
+}
+
+#floor {
+    display: inherit;
+    height: 3vh;
+    background-image: url(../assets/img/brick.jpg);
+    background-size: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-repeat: repeat-x;
+}
+.floor {
+    background-color: rgba(15, 15, 15, 0.726);
+    background-image: url("../assets/img/background-2.jpg");
+    border-radius: 10px;
+}
+
+#reinicio {
+    display: none;
+    height: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgb(0, 0, 0) !important;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(27, 24, 24, 0.26);
+    padding: 0px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#button {
+    height: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgb(0, 0, 0) !important;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(27, 24, 24, 0.26);
+    padding: 0px 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#cantidad, 
+#puntos {
+    float: right;
+    padding-right: 8px;
+}
+#container-puntos {
+    display: flex;
+    justify-content: space-between;
+}

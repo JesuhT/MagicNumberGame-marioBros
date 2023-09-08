@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego de Adivinanza de Números</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <!--Principal-->
+  <div class="main">
+    <div class="top">
+      <h1>Adivina el número</h1>
+      <p>Estoy pensando en un número entre 1 y 100. ¡Adivina cuál es!</p>
+      <!--Caja de entrada-->
+      <input type="number" id="guess" min="1" max="100" />
+      <button id="button" onclick="adivinarNumero()">Adivinar</button>
+      <button id="reinicio" onclick="reiniciar()">Reiniciar</button>
+      <p id="mensaje"></p>
+    </div>
+    <div class="container-puntos">
+      <p id="cantidad"> 0</p>
+      <p id="puntos">Puntos: </p>
+      
+    </div>
+    <!--Contenedor para el piso-->
+    <div class="floor">
+      <!--Contenedor para el flex de personajes-->
+      <div id="container">
+        <!--Contenedor sin separación entre elementos-->
+        <div class="" id="bowser-peach">
+          <div class="peach-cut">
+            <img id="peach" src="assets/gif/princess-peach.gif" alt="Princess Peach" />
+          </div>
+          <img src="assets/gif/Bowser_stand.webp" alt="bowser standing" id="bowser" />
+        </div>
+        <img id="mario" src="assets/gif/mj.gif" alt="Mario" />
+      </div>
+      <div id="floor"></div>
+    </div>
+
+  </div>
+</body>
+
+</html>
