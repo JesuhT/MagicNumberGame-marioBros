@@ -117,12 +117,28 @@ body {
     cursor: pointer;
 }
 
-#cantidad, 
-#puntos {
+.cont {
+    justify-content: space-between;
+}
+
+.cont #intentos {
+    float: right;
+    padding-right: 8px;
+    color: rosybrown;
+}
+#can-intentos {
     float: right;
     padding-right: 8px;
 }
+#cantidad, 
+#puntos {
+    position: relative;
+    float: left;
+    padding: 1px 20px;
+}
+#puntos {
+    
+}
 #container-puntos {
-    display: flex;
-    justify-content: space-between;
+    padding-left: 20px;
 }
